@@ -1,7 +1,7 @@
 import requests
 
 class BotCuspidorAPI:
-    def __init__(self, base_url = "http://backend-java:7010/cuspidor-bot/api"):
+    def __init__(self, base_url = "http://db-service-api:7010/cuspidor-bot/api"):
         self.base_url = base_url
         
     async def criar_usuario(self, name:str, user_id_telegram: str) -> bool:
